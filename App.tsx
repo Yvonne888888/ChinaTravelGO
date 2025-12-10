@@ -31,7 +31,7 @@ const FooterContent = () => {
     );
 };
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <LanguageProvider>
       <Router>
