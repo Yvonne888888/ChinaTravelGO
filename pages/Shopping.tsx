@@ -19,7 +19,7 @@ export const Shopping: React.FC = () => {
       <section className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
          <div className="flex items-center mb-4">
              <i className="ph-receipt text-3xl text-gray-700 mr-3"></i>
-             <h2 className="text-xl font-semibold">Tax Refund Policy (Departure)</h2>
+             <h2 className="text-2xl font-bold">Tax Refund Policy (Departure)</h2>
          </div>
          <p className="text-gray-600 text-sm mb-4">
            International tourists can claim VAT refunds (usually 9%-11%) at designated stores for purchases over 500 RMB. You must process this at the airport before departure.
@@ -31,7 +31,7 @@ export const Shopping: React.FC = () => {
 
       {/* Online Shopping */}
       <section className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-         <h2 className="text-xl font-semibold mb-6">Major Shopping Platforms</h2>
+         <h2 className="text-2xl font-bold mb-6">Major Shopping Platforms</h2>
          <div className="grid md:grid-cols-2 gap-4">
             
             {/* Taobao */}

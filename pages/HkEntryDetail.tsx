@@ -46,7 +46,7 @@ export const HkEntryDetail: React.FC = () => {
        </button>
 
        <header className="bg-gray-50 p-6 rounded-xl border border-gray-100">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2 flex items-center">
+        <h1 className="text-4xl font-extrabold text-gray-900 mb-2 flex items-center">
           <i className={`ph-duotone ${data.icon} ${data.color} mr-3`}></i>
           {data.title}
         </h1>

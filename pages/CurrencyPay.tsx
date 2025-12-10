@@ -36,7 +36,7 @@ export const CurrencyPay: React.FC = () => {
 
       {/* Converter */}
       <section className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-        <h2 className="text-xl font-semibold mb-4 text-gray-800">Currency Converter</h2>
+        <h2 className="text-2xl font-bold mb-4 text-gray-800">Currency Converter</h2>
         <div className="flex flex-col md:flex-row items-center gap-4">
           <div className="flex-1 w-full">
             <label className="block text-xs font-medium text-gray-500 mb-1">From ({currency})</label>
@@ -85,7 +85,7 @@ export const CurrencyPay: React.FC = () => {
           <div className="absolute top-0 right-0 p-4 opacity-10">
              <i className="ph-chat-circle-dots text-8xl text-green-600"></i>
           </div>
-          <h3 className="text-xl font-bold text-green-700 mb-2">WeChat Pay</h3>
+          <h3 className="text-2xl font-bold text-green-700 mb-2">WeChat Pay</h3>
           <p className="text-sm text-gray-600 mb-4">Essential for daily life. Used for restaurants, convenience stores, and taxis.</p>
           <Link to="/guide/wechat-pay-guide" className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
             <i className="ph-book-open mr-2"></i> View Setup Guide
@@ -97,7 +97,7 @@ export const CurrencyPay: React.FC = () => {
            <div className="absolute top-0 right-0 p-4 opacity-10">
              <i className="ph-qr-code text-8xl text-blue-600"></i>
           </div>
-          <h3 className="text-xl font-bold text-blue-600 mb-2">Alipay</h3>
+          <h3 className="text-2xl font-bold text-blue-600 mb-2">Alipay</h3>
           <p className="text-sm text-gray-600 mb-4">Widely accepted. Often easier for foreigners to link international credit cards.</p>
           <Link to="/guide/alipay-guide" className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
             <i className="ph-book-open mr-2"></i> View Setup Guide
@@ -109,7 +109,7 @@ export const CurrencyPay: React.FC = () => {
       <section className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
         <div className="flex items-center mb-4">
            <i className="ph-bank text-3xl text-gray-700 mr-3"></i>
-           <h2 className="text-xl font-bold text-gray-900">Bank Currency Exchange</h2>
+           <h2 className="text-2xl font-bold text-gray-900">Bank Currency Exchange</h2>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-start gap-4">
            <div className="text-sm text-gray-600 space-y-2">

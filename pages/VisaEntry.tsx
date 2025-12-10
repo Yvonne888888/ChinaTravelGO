@@ -34,7 +34,7 @@ export const VisaEntry: React.FC = () => {
   return (
     <div className="space-y-8 animate-fade-in">
       <header className="bg-red-50 p-6 rounded-xl border border-red-100">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2 flex items-center">
+        <h1 className="text-4xl font-extrabold text-gray-900 mb-2 flex items-center">
           <i className="ph-duotone ph-passport text-china-red mr-3"></i>
           {t('visa.title')}
         </h1>
@@ -43,7 +43,7 @@ export const VisaEntry: React.FC = () => {
 
       {/* Visa Checker Card */}
       <section className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-        <h2 className="text-xl font-semibold mb-4 text-gray-800">{t('visa.checker_title')}</h2>
+        <h2 className="text-2xl font-bold mb-4 text-gray-800">{t('visa.checker_title')}</h2>
         
         <div className="mb-6">
           <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -130,7 +130,7 @@ export const VisaEntry: React.FC = () => {
         <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col">
           <div className="flex items-center mb-4">
              <i className="ph-duotone ph-suitcase text-2xl text-blue-600 mr-2"></i>
-             <h2 className="text-xl font-semibold">{t('visa.customs_title')}</h2>
+             <h2 className="text-2xl font-bold">{t('visa.customs_title')}</h2>
           </div>
           <ul className="space-y-3 text-sm text-gray-600 mb-6 flex-grow">
             <li className="flex items-start">
@@ -150,7 +150,7 @@ export const VisaEntry: React.FC = () => {
         <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col">
           <div className="flex items-center mb-4">
              <i className="ph-duotone ph-prohibit text-2xl text-red-600 mr-2"></i>
-             <h2 className="text-xl font-semibold">{t('visa.prohibited_title')}</h2>
+             <h2 className="text-2xl font-bold">{t('visa.prohibited_title')}</h2>
           </div>
            <ul className="space-y-3 text-sm text-gray-600 mb-6 flex-grow">
             <li className="flex items-start">

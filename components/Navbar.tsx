@@ -41,7 +41,7 @@ export const Navbar: React.FC = () => {
                       }`}
                   >
                     <i className={`${item.icon} text-xl sm:text-2xl mb-0.5`}></i>
-                    <span className="text-[10px] sm:text-xs font-medium whitespace-nowrap text-center leading-tight">{t(item.labelKey).split(' & ')[0]}</span>
+                    <span className="text-sm sm:text-base font-semibold whitespace-nowrap text-center leading-tight">{t(item.labelKey)}</span>
                   </Link>
                 );
               })}

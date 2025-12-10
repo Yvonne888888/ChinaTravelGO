@@ -19,7 +19,8 @@ export const LanguageProvider = ({ children }: { children?: ReactNode }) => {
     const loadTranslations = async () => {
       setIsLoading(true);
       try {
-        const response = await fetch(`./locales/${language}.json`);
+        const base = (import.meta as any).env?.BASE_URL || '/';
+        const response = await fetch(`${base}locales/${language}.json`);
         const data = await response.json();
         setTranslations(data);
       } catch (error) {
@@ -32,8 +33,21 @@ export const LanguageProvider = ({ children }: { children?: ReactNode }) => {
     loadTranslations();
   }, [language]);
 
+  const humanizeKey = (key: string) => {
+    const last = key.split('.').pop() || key;
+    const stripped = last.replace(/_?title$/i, '');
+    return stripped
+      .split(/_|\s+/)
+      .filter(Boolean)
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(' ');
+  };
+
   const t = (key: string): string => {
-    return translations[key] || key;
+    if (Object.keys(translations).length === 0) {
+      return humanizeKey(key);
+    }
+    return (translations as any)[key] || humanizeKey(key);
   };
 
   return (
