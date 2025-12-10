@@ -6,7 +6,7 @@
   "homepage": "https://yvonne888888.github.io/ChinaTravelGo/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=./",  
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
