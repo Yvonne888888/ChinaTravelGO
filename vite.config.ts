@@ -5,6 +5,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
+      // *** 新增行：设置 GitHub Pages 的基础路径 ***
+      base: '/ChinaTravelGo/', 
+      // ***************************************
       server: {
         port: 3000,
         host: '0.0.0.0',
