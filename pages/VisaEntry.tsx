@@ -10,7 +10,7 @@ export const VisaEntry: React.FC = () => {
   const [result, setResult] = useState<VisaPolicy | null>(null);
 
   useEffect(() => {
-    fetch('./data/visa_policies.json')
+    fetch('/data/visa_policies.json')
       .then((res) => res.json())
       .then((data) => {
         // Sort: Visa Free first
