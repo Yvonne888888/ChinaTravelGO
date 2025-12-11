@@ -1,10 +1,11 @@
 {
-  "nav.visa": "入境政策",
+  "nav.entry": "入境与签证",
   "nav.currency": "货币与支付",
   "nav.traffic": "交通与应用",
   "nav.internet": "通讯与网络",
-  "nav.shopping": "购物与退税",
-  "nav.safety": "安全与餐饮",
+  "nav.language": "语言与礼仪",
+  "nav.culture": "美食与文化",
+  "nav.safety": "安全与紧急",
   
   "visa.title": "入境政策",
   "visa.subtitle": "查询护照签证要求、过境政策及海关规定。",
