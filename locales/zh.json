@@ -1,0 +1,43 @@
+{
+  "nav.visa": "签证与入境",
+  "nav.money": "支付与现金",
+  "nav.transport": "交通与连接",
+  "nav.language": "语言与文化",
+  "nav.essentials": "必备与安全",
+
+  "home.title": "中国旅行助手",
+  "home.subtitle": "您的中国之旅必备工具箱。",
+  "home.gba": "下一站，大湾区探索",
+
+  "visa.title": "签证与入境",
+  "visa.subtitle": "签证要求、海关申报、健康申报及入境流程。",
+  "visa.checker_title": "入境要求查询",
+  "visa.customs_title": "海关申报",
+  "visa.prohibited_title": "违禁物品",
+
+  "money.title": "资金与移动支付",
+  "money.subtitle": "微信/支付宝设置、货币兑换及预算建议。",
+  "money.converter": "汇率换算",
+  "money.payment_guide": "移动支付设置",
+
+  "transport.title": "交通与连接",
+  "transport.subtitle": "高铁、地铁、打车应用、SIM卡、VPN及Wi-Fi。",
+  "transport.modes": "交通方式",
+  "transport.apps": "必备应用",
+  "transport.connect": "网络连接 (SIM & VPN)",
+
+  "language.title": "语言与文化",
+  "language.subtitle": "实用短语、翻译工具、礼仪及禁忌。",
+  "language.phrases": "生存短语",
+  "language.apps": "翻译应用",
+  "language.etiquette": "礼仪与禁忌",
+
+  "essentials.title": "必备品与安全",
+  "essentials.subtitle": "保险、紧急联系、食品安全、防骗及退税。",
+  "essentials.emergency": "紧急电话",
+  "essentials.tax": "退税与购物",
+  "essentials.scams": "常见骗局防范",
+
+  "footer.questions": "有任何疑问？",
+  "footer.contact": "我们提供免费的咨询解答！"
+}

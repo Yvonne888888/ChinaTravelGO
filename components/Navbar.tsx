@@ -3,18 +3,19 @@ import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../services/LanguageContext';
 
 const NAV_ITEMS = [
-  { path: '/visa', icon: 'ph-passport', labelKey: 'nav.entry' },
-  { path: '/internet', icon: 'ph-wifi-high', labelKey: 'nav.internet' },
-  { path: '/currency', icon: 'ph-currency-cny', labelKey: 'nav.currency' },
-  { path: '/traffic', icon: 'ph-train', labelKey: 'nav.traffic' },
-  { path: '/language', icon: 'ph-globe', labelKey: 'nav.language' },
-  { path: '/culture', icon: 'ph-bowl-food', labelKey: 'nav.culture' },
-  { path: '/safety', icon: 'ph-shield-check', labelKey: 'nav.safety' },
+  { path: '/visa', icon: 'ph-passport', labelKey: 'nav.visa' },
+  { path: '/money', icon: 'ph-currency-cny', labelKey: 'nav.money' },
+  { path: '/transport', icon: 'ph-train', labelKey: 'nav.transport' },
+  { path: '/language', icon: 'ph-translate', labelKey: 'nav.language' },
+  { path: '/essentials', icon: 'ph-shield-check', labelKey: 'nav.essentials' },
 ];
 
 export const Navbar: React.FC = () => {
   const { t, language, setLanguage } = useLanguage();
   const location = useLocation();
+
+  // Hide Navbar on Home Page if desired, or keep it. Keeping it for quick access.
+  // We can simplify it on mobile if needed, but horizontal scroll works well.
 
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-md border-b border-gray-200">
@@ -23,7 +24,7 @@ export const Navbar: React.FC = () => {
           {/* Logo / Title */}
           <Link to="/" className="flex-shrink-0 flex items-center">
              <i className="ph-fill ph-panda text-3xl text-china-red mr-2"></i>
-             <span className="font-extrabold text-xl text-gray-900 tracking-tight hidden md:block">无忧中国之旅</span>
+             <span className="font-bold text-xl text-gray-900 tracking-tight hidden md:block">China Traveler Toolkit</span>
           </Link>
 
           {/* Navigation Links (Scrollable on mobile) */}
@@ -35,14 +36,14 @@ export const Navbar: React.FC = () => {
                   <Link
                     key={item.path}
                     to={item.path}
-                    className={`flex flex-col items-center justify-center px-2 py-1 rounded-md transition-colors duration-200 min-w-[55px] sm:min-w-[80px]
+                    className={`flex flex-col items-center justify-center px-2 py-1 rounded-md transition-colors duration-200 min-w-[60px] sm:min-w-[80px]
                       ${isActive 
                         ? 'text-china-red bg-red-50' 
                         : 'text-gray-500 hover:text-china-red hover:bg-gray-50'
                       }`}
                   >
                     <i className={`${item.icon} text-xl sm:text-2xl mb-0.5`}></i>
-                    <span className="text-sm sm:text-base font-semibold whitespace-nowrap text-center leading-tight">{t(item.labelKey)}</span>
+                    <span className="text-[10px] sm:text-xs font-medium whitespace-nowrap text-center leading-tight">{t(item.labelKey)}</span>
                   </Link>
                 );
               })}

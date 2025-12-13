@@ -1,0 +1,43 @@
+{
+  "nav.visa": "Visa & Entry",
+  "nav.money": "Money & Pay",
+  "nav.transport": "Transport & Connect",
+  "nav.language": "Lang & Culture",
+  "nav.essentials": "Essentials & Safety",
+  
+  "home.title": "China Traveler Toolkit",
+  "home.subtitle": "Your essential companion for a smooth trip.",
+  "home.gba": "Next Stop: Greater Bay Area",
+
+  "visa.title": "Visa & Entry",
+  "visa.subtitle": "Visa requirements, customs, health declaration, and entry process.",
+  "visa.checker_title": "Entry Requirement Checker",
+  "visa.customs_title": "Customs Declaration",
+  "visa.prohibited_title": "Prohibited Items",
+
+  "money.title": "Money & Mobile Pay",
+  "money.subtitle": "Setup WeChat/Alipay, currency exchange, and budgeting.",
+  "money.converter": "Currency Converter",
+  "money.payment_guide": "Mobile Payment Setup",
+
+  "transport.title": "Transport & Connectivity",
+  "transport.subtitle": "Trains, Metros, Taxi apps, SIM cards, VPNs, and Wi-Fi.",
+  "transport.modes": "Transport Modes",
+  "transport.apps": "Essential Apps",
+  "transport.connect": "Connectivity (SIM & VPN)",
+
+  "language.title": "Language & Culture",
+  "language.subtitle": "Essential phrases, translation tools, etiquette, and taboos.",
+  "language.phrases": "Survival Phrases",
+  "language.apps": "Translation Apps",
+  "language.etiquette": "Etiquette & Taboos",
+
+  "essentials.title": "Essentials & Safety",
+  "essentials.subtitle": "Insurance, emergency contacts, food safety, scams, and tax refund.",
+  "essentials.emergency": "Emergency Numbers",
+  "essentials.tax": "Tax Refund & Shopping",
+  "essentials.scams": "Common Scams to Avoid",
+
+  "footer.questions": "Have questions?",
+  "footer.contact": "We provide free answers to help your trip!"
+}

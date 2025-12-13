@@ -19,33 +19,25 @@ export const GuideView: React.FC = () => {
   }
 
   return (
-    <div className="space-y-6 animate-fade-in">
+    <div className="space-y-6 animate-fade-in pb-12">
       <div className="flex items-center text-sm text-gray-500 mb-2">
-        <button onClick={() => navigate(-1)} className="hover:text-china-red flex items-center">
+        <button onClick={() => navigate(-1)} className="hover:text-china-red flex items-center transition-colors">
           <i className="ph-arrow-left mr-1"></i> Back
         </button>
       </div>
 
-      <header className="border-b border-gray-200 pb-4">
-        <h1 className="text-3xl font-bold text-gray-900">{guide.title}</h1>
+      <header className="border-b border-gray-200 pb-6">
+        <h1 className="text-3xl font-bold text-gray-900 tracking-tight">{guide.title}</h1>
       </header>
 
-      <section className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-        <div className="prose prose-red max-w-none text-gray-700 leading-relaxed whitespace-pre-line">
-          {guide.content}
-        </div>
+      <section className="bg-white p-6 sm:p-8 rounded-xl shadow-sm border border-gray-100">
+        {/* Render HTML content safely since it comes from our trusted local data file */}
+        <article 
+          className="prose prose-slate prose-headings:text-gray-900 prose-headings:font-bold prose-a:text-china-red prose-strong:text-gray-800 max-w-none 
+          prose-p:leading-relaxed prose-li:marker:text-china-red"
+          dangerouslySetInnerHTML={{ __html: guide.content }} 
+        />
       </section>
-
-      <div className="flex justify-center pt-8">
-        <a 
-          href={guide.pdfUrl} 
-          download 
-          className="flex items-center px-6 py-3 bg-china-red text-white font-bold rounded-lg shadow hover:bg-red-700 transition"
-        >
-          <i className="ph-file-pdf text-xl mr-2"></i>
-          Download Printable PDF
-        </a>
-      </div>
     </div>
   );
 };
