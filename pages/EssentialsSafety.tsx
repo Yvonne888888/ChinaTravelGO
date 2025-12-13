@@ -56,7 +56,7 @@ export const EssentialsSafety: React.FC = () => {
             {t('essentials.tax')}
          </h2>
          <p className="text-gray-600 text-sm mb-4">
-           International tourists can claim VAT refunds (9%-11%) at designated stores for purchases > 500 RMB.
+           International tourists can claim VAT refunds (9%-11%) at designated stores for purchases &gt; 500 RMB.
          </p>
          <Link to="/guide/tax-refund-guide" className="inline-flex items-center px-4 py-2 border border-pink-200 rounded-md bg-pink-50 text-sm font-medium text-pink-700 hover:bg-pink-100">
              <i className="ph-book-open mr-2"></i> View Tax Refund Guide
