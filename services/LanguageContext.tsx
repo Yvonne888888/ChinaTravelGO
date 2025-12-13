@@ -19,7 +19,8 @@ export const LanguageProvider = ({ children }: { children?: ReactNode }) => {
     const loadTranslations = async () => {
       setIsLoading(true);
       try {
-        const response = await fetch(`./locales/${language}.json`);
+        const basePath = import.meta.env.BASE_URL;
+        const response = await fetch(`${basePath}locales/${language}.json`);
         const data = await response.json();
         setTranslations(data);
       } catch (error) {

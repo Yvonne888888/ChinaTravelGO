@@ -11,35 +11,45 @@ export const HomeMenu: React.FC = () => {
       icon: 'ph-passport', 
       titleKey: 'nav.visa', 
       desc: 'Visa Policy, 144h Transit, Customs',
-      color: 'bg-white text-red-600 border-l-4 border-red-500'
+      textColor: 'text-red-600',
+      borderColor: '#EF4444',
+      accentColor: '#DC2626'
     },
     { 
       path: '/money', 
       icon: 'ph-currency-cny', 
       titleKey: 'nav.money', 
       desc: 'WeChat/Alipay Setup, Currency Exchange',
-      color: 'bg-white text-amber-600 border-l-4 border-amber-500'
+      textColor: 'text-amber-600',
+      borderColor: '#D97706',
+      accentColor: '#B45309'
     },
     { 
       path: '/transport', 
       icon: 'ph-train', 
       titleKey: 'nav.transport', 
       desc: 'High-Speed Rail, Metro, Maps, SIM',
-      color: 'bg-white text-blue-600 border-l-4 border-blue-500'
+      textColor: 'text-blue-600',
+      borderColor: '#2563EB',
+      accentColor: '#1D4ED8'
     },
     { 
       path: '/language', 
       icon: 'ph-translate', 
       titleKey: 'nav.language', 
       desc: 'Translator Apps, Survival Phrases',
-      color: 'bg-white text-purple-600 border-l-4 border-purple-500'
+      textColor: 'text-purple-600',
+      borderColor: '#A855F7',
+      accentColor: '#9333EA'
     },
     { 
       path: '/essentials', 
       icon: 'ph-shield-check', 
       titleKey: 'nav.essentials', 
       desc: 'Safety, Emergency, Tax Refund',
-      color: 'bg-white text-green-600 border-l-4 border-green-500'
+      textColor: 'text-green-600',
+      borderColor: '#16A34A',
+      accentColor: '#15803D'
     },
   ];
 
@@ -58,7 +68,10 @@ export const HomeMenu: React.FC = () => {
           <Link 
             key={item.path} 
             to={item.path}
-            className={`group relative flex items-center p-5 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 transform hover:-translate-y-0.5 border border-gray-100 ${item.color}`}
+            style={{
+              borderLeftColor: item.borderColor,
+            }}
+            className={`group relative flex items-center p-5 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 transform hover:-translate-y-0.5 bg-white border border-gray-100 border-l-4 ${item.textColor}`}
           >
             <div className="w-12 h-12 rounded-full bg-gray-50 flex items-center justify-center mr-5 group-hover:bg-gray-100 transition-colors">
               <i className={`${item.icon} text-3xl`}></i>
