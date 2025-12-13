@@ -44,12 +44,12 @@ export const HomeMenu: React.FC = () => {
   ];
 
   return (
-    <div className="space-y-6 animate-fade-in pb-12">
-      {/* Hero Section */}
-      <div className="text-center py-8 bg-gradient-to-br from-china-red to-red-700 text-white rounded-2xl shadow-lg mb-8 mx-0 sm:mx-0">
-        <i className="ph-fill ph-panda text-6xl mb-4 text-white opacity-90"></i>
-        <h1 className="text-3xl font-bold mb-2 tracking-tight">{t('home.title')}</h1>
-        <p className="text-red-100 text-sm opacity-90 max-w-xs mx-auto">{t('home.subtitle')}</p>
+    <div className="space-y-6 animate-fade-in pb-12 pt-4">
+      {/* Simple Header with Logo */}
+      <div className="text-center mb-8">
+        <i className="ph-fill ph-panda text-6xl text-china-red mb-2 inline-block"></i>
+        <h1 className="text-3xl font-bold text-gray-900 tracking-tight">{t('home.title')}</h1>
+        <p className="text-gray-500 text-sm mt-2">{t('home.subtitle')}</p>
       </div>
 
       {/* Vertical Navigation Buttons */}
@@ -82,7 +82,6 @@ export const HomeMenu: React.FC = () => {
             <span className="font-bold tracking-wide uppercase">{t('home.gba')}</span>
             <i className="ph-arrow-right ml-2"></i>
           </div>
-          <p className="text-xs text-blue-100 mt-1">Hong Kong • Macau • Guangdong</p>
         </Link>
       </div>
     </div>
