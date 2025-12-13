@@ -30,44 +30,36 @@ export const CultureEtiquette: React.FC = () => {
       <section className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
          <h2 className="text-xl font-semibold mb-6">Culinary Guide & The 8 Great Cuisines</h2>
          <div className="grid sm:grid-cols-2 gap-4">
-            <div className="p-4 border border-gray-100 rounded-lg bg-gray-50 flex justify-between items-center group hover:border-red-200 transition">
+            <div className="p-4 border border-gray-100 rounded-lg bg-gray-50 flex justify-between items-center hover:border-red-200 transition">
                <div>
                  <h3 className="font-bold text-gray-800">Sichuan Cuisine (Chuan)</h3>
                  <p className="text-xs text-gray-500">Spicy, bold, numbing (Ma La).</p>
                </div>
-               <a href="./assets/pdfs/sichuan_cuisine_guide_en.pdf" download className="text-china-red opacity-0 group-hover:opacity-100 transition-opacity">
-                 <i className="ph-download-simple text-xl"></i>
-               </a>
+               <i className="ph-bowl-food text-xl text-red-400"></i>
             </div>
 
-            <div className="p-4 border border-gray-100 rounded-lg bg-gray-50 flex justify-between items-center group hover:border-red-200 transition">
+            <div className="p-4 border border-gray-100 rounded-lg bg-gray-50 flex justify-between items-center hover:border-red-200 transition">
                <div>
                  <h3 className="font-bold text-gray-800">Cantonese Cuisine (Yue)</h3>
                  <p className="text-xs text-gray-500">Fresh, mild, dim sum.</p>
                </div>
-               <a href="./assets/pdfs/cantonese_cuisine_guide_en.pdf" download className="text-china-red opacity-0 group-hover:opacity-100 transition-opacity">
-                 <i className="ph-download-simple text-xl"></i>
-               </a>
+               <i className="ph-bowl-food text-xl text-red-400"></i>
             </div>
 
-             <div className="p-4 border border-gray-100 rounded-lg bg-gray-50 flex justify-between items-center group hover:border-red-200 transition">
+             <div className="p-4 border border-gray-100 rounded-lg bg-gray-50 flex justify-between items-center hover:border-red-200 transition">
                <div>
                  <h3 className="font-bold text-gray-800">Shandong Cuisine (Lu)</h3>
                  <p className="text-xs text-gray-500">Salty, crispy, braised.</p>
                </div>
-               <a href="./assets/pdfs/shandong_cuisine_guide_en.pdf" download className="text-china-red opacity-0 group-hover:opacity-100 transition-opacity">
-                 <i className="ph-download-simple text-xl"></i>
-               </a>
+               <i className="ph-bowl-food text-xl text-red-400"></i>
             </div>
 
-             <div className="p-4 border border-gray-100 rounded-lg bg-gray-50 flex justify-between items-center group hover:border-red-200 transition">
+             <div className="p-4 border border-gray-100 rounded-lg bg-gray-50 flex justify-between items-center hover:border-red-200 transition">
                <div>
                  <h3 className="font-bold text-gray-800">Jiangsu Cuisine (Su)</h3>
                  <p className="text-xs text-gray-500">Sweet, soft, artistic.</p>
                </div>
-               <a href="./assets/pdfs/jiangsu_cuisine_guide_en.pdf" download className="text-china-red opacity-0 group-hover:opacity-100 transition-opacity">
-                 <i className="ph-download-simple text-xl"></i>
-               </a>
+               <i className="ph-bowl-food text-xl text-red-400"></i>
             </div>
          </div>
       </section>

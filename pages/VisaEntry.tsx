@@ -10,10 +10,11 @@ export const VisaEntry: React.FC = () => {
   const [result, setResult] = useState<VisaPolicy | null>(null);
 
   useEffect(() => {
+    // Use relative path to fetch data from public folder.
+    // This avoids runtime errors with import.meta.env in certain environments.
     fetch('./data/visa_policies.json')
       .then((res) => res.json())
       .then((data) => {
-        // Sort: Visa Free first
         const sorted = data.sort((a: VisaPolicy, b: VisaPolicy) => {
            if (a.requirement.includes('Free') && !b.requirement.includes('Free')) return -1;
            if (!a.requirement.includes('Free') && b.requirement.includes('Free')) return 1;
@@ -67,7 +68,6 @@ export const VisaEntry: React.FC = () => {
 
         {result && (
           <div className="space-y-6">
-            {/* Primary Status */}
             <div className={`rounded-lg p-5 border ${result.requirement.includes('Free') ? 'bg-green-50 border-green-200' : 'bg-amber-50 border-amber-200'}`}>
               <div className="flex items-start">
                 <div className={`flex-shrink-0 p-2 rounded-full ${result.requirement.includes('Free') ? 'bg-green-100 text-green-600' : 'bg-amber-100 text-amber-600'}`}>
@@ -84,7 +84,6 @@ export const VisaEntry: React.FC = () => {
                     </a>
                   )}
 
-                  {/* Warning for Visa Free */}
                   {result.requirement.includes('Free') && (
                     <div className="mt-4 p-3 bg-white border border-yellow-200 rounded text-sm text-yellow-800 shadow-sm">
                       <strong className="block mb-1 flex items-center">
@@ -98,7 +97,6 @@ export const VisaEntry: React.FC = () => {
               </div>
             </div>
 
-            {/* Transit Policy Section */}
             {result.transit_policy && (
                <div className="bg-blue-50 rounded-lg p-5 border border-blue-200">
                  <div className="flex items-start mb-4">
@@ -125,23 +123,13 @@ export const VisaEntry: React.FC = () => {
         )}
       </section>
 
-      {/* Customs & Quarantine */}
+      {/* Customs & Prohibited */}
       <section className="grid md:grid-cols-2 gap-6">
         <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col">
           <div className="flex items-center mb-4">
              <i className="ph-duotone ph-suitcase text-2xl text-blue-600 mr-2"></i>
              <h2 className="text-xl font-semibold">{t('visa.customs_title')}</h2>
           </div>
-          <ul className="space-y-3 text-sm text-gray-600 mb-6 flex-grow">
-            <li className="flex items-start">
-              <i className="ph-caret-right mt-1 mr-2 text-gray-400"></i>
-              Declare cash over 20,000 CNY or 5,000 USD.
-            </li>
-            <li className="flex items-start">
-              <i className="ph-caret-right mt-1 mr-2 text-gray-400"></i>
-              Declare expensive electronics for re-export.
-            </li>
-          </ul>
           <Link to="/guide/customs-guide" className="mt-auto w-full flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md bg-gray-50 text-sm font-medium text-gray-700 hover:bg-gray-100">
              <i className="ph-book-open mr-2"></i> View Customs Guide
           </Link>
@@ -152,20 +140,6 @@ export const VisaEntry: React.FC = () => {
              <i className="ph-duotone ph-prohibit text-2xl text-red-600 mr-2"></i>
              <h2 className="text-xl font-semibold">{t('visa.prohibited_title')}</h2>
           </div>
-           <ul className="space-y-3 text-sm text-gray-600 mb-6 flex-grow">
-            <li className="flex items-start">
-              <i className="ph-x-circle mt-1 mr-2 text-red-400"></i>
-              Drugs, weapons, explosives (Strictly Prohibited).
-            </li>
-            <li className="flex items-start">
-              <i className="ph-x-circle mt-1 mr-2 text-red-400"></i>
-              Psychotropic medicines without prescription.
-            </li>
-            <li className="flex items-start">
-              <i className="ph-x-circle mt-1 mr-2 text-red-400"></i>
-              Fresh fruit, vegetables, and raw meat.
-            </li>
-          </ul>
           <Link to="/guide/prohibited-items" className="mt-auto w-full flex items-center justify-center px-4 py-2 border border-red-200 rounded-md bg-red-50 text-sm font-medium text-red-700 hover:bg-red-100">
              <i className="ph-book-open mr-2"></i> View Prohibited List
           </Link>
