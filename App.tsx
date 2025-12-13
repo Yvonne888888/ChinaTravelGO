@@ -12,9 +12,6 @@ import { Shopping } from './pages/Shopping';
 import { GuideView } from './pages/GuideView';
 import { NotFound } from './pages/NotFound';
 import { HkEntryDetail } from './pages/HkEntryDetail';
-import { HomeLanding } from './pages/HomeLanding';
-import { LanguageTools } from './pages/LanguageTools';
-import { CultureEtiquette } from './pages/CultureEtiquette';
 
 const FooterContent = () => {
     const { t } = useLanguage();
@@ -42,12 +39,10 @@ const App = () => {
           <Navbar />
           <main className="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <Routes>
-              <Route path="/" element={<HomeLanding />} />
+              <Route path="/" element={<Navigate to="/visa" replace />} />
               <Route path="/visa" element={<VisaEntry />} />
               <Route path="/currency" element={<CurrencyPay />} />
               <Route path="/traffic" element={<TrafficMaps />} />
-              <Route path="/language" element={<LanguageTools />} />
-              <Route path="/culture" element={<CultureEtiquette />} />
               <Route path="/traffic/hk-entry/:methodId" element={<HkEntryDetail />} />
               <Route path="/traffic/:cityId" element={<CityDetail />} />
               <Route path="/internet" element={<InternetComm />} />

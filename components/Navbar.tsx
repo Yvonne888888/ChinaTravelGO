@@ -3,12 +3,11 @@ import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../services/LanguageContext';
 
 const NAV_ITEMS = [
-  { path: '/visa', icon: 'ph-passport', labelKey: 'nav.entry' },
-  { path: '/internet', icon: 'ph-wifi-high', labelKey: 'nav.internet' },
+  { path: '/visa', icon: 'ph-passport', labelKey: 'nav.visa' },
   { path: '/currency', icon: 'ph-currency-cny', labelKey: 'nav.currency' },
   { path: '/traffic', icon: 'ph-train', labelKey: 'nav.traffic' },
-  { path: '/language', icon: 'ph-globe', labelKey: 'nav.language' },
-  { path: '/culture', icon: 'ph-bowl-food', labelKey: 'nav.culture' },
+  { path: '/internet', icon: 'ph-wifi-high', labelKey: 'nav.internet' },
+  { path: '/shopping', icon: 'ph-shopping-bag', labelKey: 'nav.shopping' },
   { path: '/safety', icon: 'ph-shield-check', labelKey: 'nav.safety' },
 ];
 
@@ -23,7 +22,7 @@ export const Navbar: React.FC = () => {
           {/* Logo / Title */}
           <Link to="/" className="flex-shrink-0 flex items-center">
              <i className="ph-fill ph-panda text-3xl text-china-red mr-2"></i>
-             <span className="font-extrabold text-xl text-gray-900 tracking-tight hidden md:block">无忧中国之旅</span>
+             <span className="font-bold text-xl text-gray-900 tracking-tight hidden md:block">China Traveler Toolkit</span>
           </Link>
 
           {/* Navigation Links (Scrollable on mobile) */}
@@ -42,7 +41,7 @@ export const Navbar: React.FC = () => {
                       }`}
                   >
                     <i className={`${item.icon} text-xl sm:text-2xl mb-0.5`}></i>
-                    <span className="text-sm sm:text-base font-semibold whitespace-nowrap text-center leading-tight">{t(item.labelKey)}</span>
+                    <span className="text-[10px] sm:text-xs font-medium whitespace-nowrap text-center leading-tight">{t(item.labelKey).split(' & ')[0]}</span>
                   </Link>
                 );
               })}

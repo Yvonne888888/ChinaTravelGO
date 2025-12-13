@@ -18,7 +18,7 @@ export const CultureEtiquette: React.FC = () => {
       <section className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
          <div className="flex items-center mb-4">
              <i className="ph-scroll text-3xl text-amber-600 mr-3"></i>
-             <h2 className="text-2xl font-bold">Intangible Cultural Heritage (ICH)</h2>
+             <h2 className="text-xl font-semibold">Intangible Cultural Heritage (ICH)</h2>
          </div>
          <p className="text-gray-600 text-sm leading-relaxed mb-4">
            China possesses a vast array of Intangible Cultural Heritage, ranging from Peking Opera and Calligraphy to traditional tea processing techniques. While exploring, look for the official UNESCO or National Heritage symbols to experience authentic Chinese culture.
@@ -28,7 +28,7 @@ export const CultureEtiquette: React.FC = () => {
 
       {/* Cuisine Guides */}
       <section className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-         <h2 className="text-2xl font-bold mb-6">Culinary Guide & The 8 Great Cuisines</h2>
+         <h2 className="text-xl font-semibold mb-6">Culinary Guide & The 8 Great Cuisines</h2>
          <div className="grid sm:grid-cols-2 gap-4">
             <div className="p-4 border border-gray-100 rounded-lg bg-gray-50 flex justify-between items-center group hover:border-red-200 transition">
                <div>

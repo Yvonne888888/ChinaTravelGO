@@ -1,11 +1,10 @@
 {
-  "nav.entry": "Entry & Visa",
+  "nav.visa": "Entry Policy",
   "nav.currency": "Currency & Pay",
   "nav.traffic": "Traffic & Apps",
   "nav.internet": "Internet & Comm",
-  "nav.language": "Language & Etiquette",
-  "nav.culture": "Food & Culture",
-  "nav.safety": "Safety & Emergency",
+  "nav.shopping": "Shopping & Tax",
+  "nav.safety": "Safety & Dining",
   
   "visa.title": "Entry Policy",
   "visa.subtitle": "Check passport requirements, transit policies, and customs rules.",

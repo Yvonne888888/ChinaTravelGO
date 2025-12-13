@@ -9,7 +9,7 @@ export const CityDetail: React.FC = () => {
   const [city, setCity] = useState<CityTransport | null>(null);
 
   useEffect(() => {
-    fetch('/data/city_data.json')
+    fetch('./data/city_data.json')
       .then((res) => res.json())
       .then((data: CityTransport[]) => {
         const found = data.find(c => c.id === cityId);

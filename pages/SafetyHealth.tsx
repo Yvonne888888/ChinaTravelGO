@@ -17,7 +17,7 @@ export const SafetyHealth: React.FC = () => {
 
       {/* Emergency Numbers */}
       <section className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
-      <h2 className="text-2xl font-bold mb-6 text-gray-800">Emergency Numbers</h2>
+        <h2 className="text-xl font-semibold mb-6 text-gray-800">Emergency Numbers</h2>
         <div className="grid grid-cols-3 gap-4">
            <div className="p-4 bg-red-50 rounded-lg border border-red-100">
               <div className="text-3xl font-black text-red-600 mb-1">110</div>
@@ -36,7 +36,7 @@ export const SafetyHealth: React.FC = () => {
 
       {/* Food Delivery & Dining */}
       <section className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-             <h2 className="text-2xl font-bold mb-6 flex items-center">
+         <h2 className="text-xl font-semibold mb-6 flex items-center">
            <i className="ph-bowl-food text-amber-600 mr-2"></i>
            Dining & Food Delivery
          </h2>
