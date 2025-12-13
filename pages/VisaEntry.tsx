@@ -10,9 +10,9 @@ export const VisaEntry: React.FC = () => {
   const [result, setResult] = useState<VisaPolicy | null>(null);
 
   useEffect(() => {
-    // Use relative path to fetch data from public folder.
-    // This avoids runtime errors with import.meta.env in certain environments.
-    fetch('./data/visa_policies.json')
+    // Use import.meta.env.BASE_URL to get the correct base path for GitHub Pages
+    const basePath = import.meta.env.BASE_URL;
+    fetch(`${basePath}data/visa_policies.json`)
       .then((res) => res.json())
       .then((data) => {
         const sorted = data.sort((a: VisaPolicy, b: VisaPolicy) => {
