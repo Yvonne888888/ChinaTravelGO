@@ -3,7 +3,6 @@ import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { Navbar } from './components/Navbar';
 import { LanguageProvider, useLanguage } from './services/LanguageContext';
 
-// Pages
 import { HomeMenu } from './pages/HomeMenu';
 import { VisaEntry } from './pages/VisaEntry';
 import { MoneyPay } from './pages/MoneyPay';
@@ -11,7 +10,6 @@ import { TransportConnect } from './pages/TransportConnect';
 import { LanguageCulture } from './pages/LanguageCulture';
 import { EssentialsSafety } from './pages/EssentialsSafety';
 import { GbaExploration } from './pages/GbaExploration';
-
 import { GuideView } from './pages/GuideView';
 import { NotFound } from './pages/NotFound';
 import { HkEntryDetail } from './pages/HkEntryDetail';
@@ -43,32 +41,26 @@ const App = () => {
           <Navbar />
           <main className="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <Routes>
-              {/* Home Menu as Index */}
               <Route path="/" element={<HomeMenu />} />
               
-              {/* Main Categories */}
               <Route path="/visa" element={<VisaEntry />} />
               <Route path="/money" element={<MoneyPay />} />
               <Route path="/transport" element={<TransportConnect />} />
               <Route path="/language" element={<LanguageCulture />} />
               <Route path="/essentials" element={<EssentialsSafety />} />
 
-              {/* Sub-pages and Details */}
               <Route path="/gba" element={<GbaExploration />} />
               <Route path="/traffic/hk-entry/:methodId" element={<HkEntryDetail />} />
               <Route path="/traffic/:cityId" element={<CityDetail />} />
               
-              {/* Dynamic Guide Route */}
               <Route path="/guide/:guideId" element={<GuideView />} />
 
-              {/* Legacy Redirects (for safety) */}
               <Route path="/currency" element={<Navigate to="/money" replace />} />
               <Route path="/traffic" element={<Navigate to="/transport" replace />} />
               <Route path="/internet" element={<Navigate to="/transport" replace />} />
               <Route path="/safety" element={<Navigate to="/essentials" replace />} />
               <Route path="/shopping" element={<Navigate to="/essentials" replace />} />
               
-              {/* 404 Handler */}
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

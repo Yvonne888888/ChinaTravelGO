@@ -41,20 +41,20 @@ export const MoneyPay: React.FC = () => {
           {/* WeChat Pay */}
           <div className="p-5 bg-green-50 rounded-lg border border-green-100 relative">
             <i className="ph-chat-circle-dots text-5xl text-green-600 absolute top-4 right-4 opacity-20"></i>
-            <h3 className="text-xl font-bold text-green-800 mb-2">WeChat Pay</h3>
-            <p className="text-sm text-gray-600 mb-4">The "Super App". Used for everything from payments to messaging.</p>
+            <h3 className="text-xl font-bold text-green-800 mb-2">{t('money.wechat_title')}</h3>
+            <p className="text-sm text-gray-600 mb-4">{t('money.wechat_desc')}</p>
             <Link to="/guide/wechat-pay-guide" className="inline-flex items-center text-sm font-bold text-green-700 hover:underline">
-              View Setup Guide <i className="ph-arrow-right ml-1"></i>
+              {t('money.view_setup')} <i className="ph-arrow-right ml-1"></i>
             </Link>
           </div>
 
           {/* Alipay */}
           <div className="p-5 bg-blue-50 rounded-lg border border-blue-100 relative">
              <i className="ph-qr-code text-5xl text-blue-600 absolute top-4 right-4 opacity-20"></i>
-            <h3 className="text-xl font-bold text-blue-800 mb-2">Alipay</h3>
-            <p className="text-sm text-gray-600 mb-4">Very foreigner-friendly. Built-in translation for mini-apps (Metro, Taxi, etc.).</p>
+            <h3 className="text-xl font-bold text-blue-800 mb-2">{t('money.alipay_title')}</h3>
+            <p className="text-sm text-gray-600 mb-4">{t('money.alipay_desc')}</p>
             <Link to="/guide/alipay-guide" className="inline-flex items-center text-sm font-bold text-blue-700 hover:underline">
-              View Setup Guide <i className="ph-arrow-right ml-1"></i>
+              {t('money.view_setup')} <i className="ph-arrow-right ml-1"></i>
             </Link>
           </div>
         </div>
@@ -65,7 +65,7 @@ export const MoneyPay: React.FC = () => {
         <h2 className="text-xl font-semibold mb-4 text-gray-800">{t('money.converter')}</h2>
         <div className="flex flex-col md:flex-row items-center gap-4">
           <div className="flex-1 w-full">
-            <label className="block text-xs font-medium text-gray-500 mb-1">From ({currency})</label>
+            <label className="block text-xs font-medium text-gray-500 mb-1">{t('money.from')} ({currency})</label>
             <div className="flex">
                <select 
                 value={currency} 
@@ -90,7 +90,7 @@ export const MoneyPay: React.FC = () => {
             <i className="ph-arrows-left-right text-2xl rotate-90 md:rotate-0"></i>
           </div>
           <div className="flex-1 w-full">
-             <label className="block text-xs font-medium text-gray-500 mb-1">To (CNY)</label>
+             <label className="block text-xs font-medium text-gray-500 mb-1">{t('money.to')} (CNY)</label>
              <div className="relative">
                 <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                   <span className="text-gray-500 font-bold">¥</span>
@@ -110,14 +110,14 @@ export const MoneyPay: React.FC = () => {
       <section className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
         <div className="flex items-center mb-4">
            <i className="ph-bank text-3xl text-gray-700 mr-3"></i>
-           <h2 className="text-xl font-bold text-gray-900">Cash & Cards</h2>
+           <h2 className="text-xl font-bold text-gray-900">{t('money.cash_title')}</h2>
         </div>
         <div className="space-y-4 text-sm text-gray-600">
-           <p><strong>Cash:</strong> While digital is king, keep ~500 RMB cash for emergencies or elderly vendors.</p>
-           <p><strong>Cards:</strong> Visa/Mastercard are rarely accepted directly at stores (except high-end hotels). <strong>Link them to Alipay/WeChat instead.</strong></p>
+           <p><strong>Cash:</strong> {t('money.cash_info')}</p>
+           <p><strong>Cards:</strong> {t('money.cards_info')}</p>
            <div className="pt-2">
              <Link to="/guide/bank-exchange-guide" className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md bg-gray-50 text-sm font-medium text-gray-700 hover:bg-gray-100">
-                <i className="ph-book-open mr-2"></i> How to Exchange Cash at Banks
+                <i className="ph-book-open mr-2"></i> {t('money.exchange_guide')}
              </Link>
            </div>
         </div>

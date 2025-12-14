@@ -21,23 +21,23 @@ export const TransportConnect: React.FC = () => {
          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <Link to="/guide/amap-guide" className="p-3 border rounded-lg hover:bg-blue-50 text-center group">
                <i className="ph-map-pin text-3xl text-blue-600 mb-2 group-hover:scale-110 transition"></i>
-               <h3 className="font-bold text-sm">Amap</h3>
-               <span className="text-xs text-gray-500">Maps & Taxi</span>
+               <h3 className="font-bold text-sm">{t('transport.amap')}</h3>
+               <span className="text-xs text-gray-500">{t('transport.amap_desc')}</span>
             </Link>
             <Link to="/guide/12306-guide" className="p-3 border rounded-lg hover:bg-blue-50 text-center group">
                <i className="ph-train text-3xl text-blue-600 mb-2 group-hover:scale-110 transition"></i>
-               <h3 className="font-bold text-sm">Railway 12306</h3>
-               <span className="text-xs text-gray-500">Train Tickets</span>
+               <h3 className="font-bold text-sm">{t('transport.railway')}</h3>
+               <span className="text-xs text-gray-500">{t('transport.railway_desc')}</span>
             </Link>
             <Link to="/guide/taxi-guide" className="p-3 border rounded-lg hover:bg-blue-50 text-center group">
                <i className="ph-taxi text-3xl text-yellow-500 mb-2 group-hover:scale-110 transition"></i>
-               <h3 className="font-bold text-sm">Didi / Taxi</h3>
-               <span className="text-xs text-gray-500">Ride Hailing</span>
+               <h3 className="font-bold text-sm">{t('transport.taxi')}</h3>
+               <span className="text-xs text-gray-500">{t('transport.taxi_desc')}</span>
             </Link>
              <Link to="/guide/public-transit-guide" className="p-3 border rounded-lg hover:bg-blue-50 text-center group">
                <i className="ph-bus text-3xl text-green-500 mb-2 group-hover:scale-110 transition"></i>
-               <h3 className="font-bold text-sm">Metro</h3>
-               <span className="text-xs text-gray-500">Subway Guide</span>
+               <h3 className="font-bold text-sm">{t('transport.metro')}</h3>
+               <span className="text-xs text-gray-500">{t('transport.metro_desc')}</span>
             </Link>
          </div>
       </section>
@@ -53,23 +53,23 @@ export const TransportConnect: React.FC = () => {
            {/* VPN Warning */}
            <div className="p-4 bg-yellow-50 rounded-lg border border-yellow-200">
               <h3 className="font-bold text-yellow-800 mb-2 flex items-center">
-                 <i className="ph-warning-circle mr-2"></i> VPN is Critical
+                 <i className="ph-warning-circle mr-2"></i> {t('transport.vpn_title')}
               </h3>
               <p className="text-sm text-yellow-800 mb-3">
-                 Google, WhatsApp, Instagram are blocked. You <strong>must</strong> install a VPN (e.g., Astrill, LetsVPN) <strong>before</strong> arrival.
+                 {t('transport.vpn_warning')}
               </p>
            </div>
 
            {/* SIM / eSIM */}
            <div className="p-4 bg-purple-50 rounded-lg border border-purple-200">
               <h3 className="font-bold text-purple-800 mb-2 flex items-center">
-                 <i className="ph-sim-card mr-2"></i> Mobile Data
+                 <i className="ph-sim-card mr-2"></i> {t('transport.sim_title')}
               </h3>
               <p className="text-sm text-purple-800 mb-3">
-                 <strong>Option A (Easy):</strong> Buy an eSIM (Airalo/Holafly) before flying. Often bypasses firewall.<br/>
-                 <strong>Option B (Cheap):</strong> Buy a local SIM at the airport (Passport required).
+                 <strong>A:</strong> {t('transport.sim_option_a')}<br/>
+                 <strong>B:</strong> {t('transport.sim_option_b')}
               </p>
-              <Link to="/guide/sim-card-guide" className="text-xs font-bold text-purple-900 underline">Read SIM Guide</Link>
+              <Link to="/guide/sim-card-guide" className="text-xs font-bold text-purple-900 underline">{t('transport.sim_guide')}</Link>
            </div>
         </div>
       </section>
@@ -83,10 +83,10 @@ export const TransportConnect: React.FC = () => {
                <i className="ph-airplane-landing text-2xl text-indigo-600"></i>
             </div>
             <div>
-               <h3 className="text-lg font-bold text-gray-900">Airports</h3>
+               <h3 className="text-lg font-bold text-gray-900">{t('transport.airport_title')}</h3>
                <p className="text-gray-600 text-sm mt-1">
-                  Arrive 3 hours early. Power banks must be marked &lt;100Wh. 
-                  <Link to="/guide/airport-guide" className="ml-2 text-blue-600 hover:underline">Read Guide</Link>
+                  {t('transport.airport_info')}
+                  <Link to="/guide/airport-guide" className="ml-2 text-blue-600 hover:underline">{t('transport.airport_guide')}</Link>
                </p>
             </div>
          </div>
@@ -96,10 +96,10 @@ export const TransportConnect: React.FC = () => {
                <i className="ph-train text-2xl text-blue-600"></i>
             </div>
             <div>
-               <h3 className="text-lg font-bold text-gray-900">High-Speed Rail</h3>
+               <h3 className="text-lg font-bold text-gray-900">{t('transport.train_title')}</h3>
                <p className="text-gray-600 text-sm mt-1">
-                  Fast (350km/h) and punctual. Passport acts as your ticket.
-                  <Link to="/guide/train-guide" className="ml-2 text-blue-600 hover:underline">Read Guide</Link>
+                  {t('transport.train_info')}
+                  <Link to="/guide/train-guide" className="ml-2 text-blue-600 hover:underline">{t('transport.train_guide')}</Link>
                </p>
             </div>
          </div>

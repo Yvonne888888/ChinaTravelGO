@@ -22,24 +22,24 @@ export const LanguageCulture: React.FC = () => {
                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-2">
                   <span className="font-bold text-blue-600">G</span>
                </div>
-               <h3 className="font-bold">Google Translate</h3>
-               <p className="text-xs text-gray-500 mt-1">Requires VPN. Best for live camera translation.</p>
+               <h3 className="font-bold">{t('language.google_translate')}</h3>
+               <p className="text-xs text-gray-500 mt-1">{t('language.google_desc')}</p>
             </div>
             
             <div className="p-4 border rounded-lg flex flex-col items-center text-center hover:bg-gray-50 transition">
                <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-2">
                   <span className="font-bold text-indigo-600">iF</span>
                </div>
-               <h3 className="font-bold">iFlytek (讯飞翻译)</h3>
-               <p className="text-xs text-gray-500 mt-1">Local favorite. Extremely accurate for voice/speech translation.</p>
+               <h3 className="font-bold">{t('language.iflytek')}</h3>
+               <p className="text-xs text-gray-500 mt-1">{t('language.iflytek_desc')}</p>
             </div>
 
             <div className="p-4 border rounded-lg flex flex-col items-center text-center hover:bg-gray-50 transition">
                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-2">
                   <span className="font-bold text-green-600">W</span>
                </div>
-               <h3 className="font-bold">WeChat</h3>
-               <p className="text-xs text-gray-500 mt-1">Long-press messages to translate. Scan menus.</p>
+               <h3 className="font-bold">{t('language.wechat')}</h3>
+               <p className="text-xs text-gray-500 mt-1">{t('language.wechat_desc')}</p>
             </div>
          </div>
       </section>
@@ -49,12 +49,12 @@ export const LanguageCulture: React.FC = () => {
          <h2 className="text-xl font-bold text-gray-900 mb-4">{t('language.phrases')}</h2>
          <div className="space-y-2">
             {[
-              { en: "Hello", zh: "Nǐ hǎo (你好)" },
-              { en: "Thank you", zh: "Xiè xiè (谢谢)" },
-              { en: "Bathroom?", zh: "Cè suǒ? (厕所?)" },
-              { en: "How much?", zh: "Duō shǎo qián? (多少钱?)" },
-              { en: "I don't understand", zh: "Tīng bù dǒng (听不懂)" },
-              { en: "Bill, please", zh: "Mǎi dān (买单)" }
+              { en: t('language.phrase.hello'), zh: t('language.phrase.hello_zh') },
+              { en: t('language.phrase.thanks'), zh: t('language.phrase.thanks_zh') },
+              { en: t('language.phrase.bathroom'), zh: t('language.phrase.bathroom_zh') },
+              { en: t('language.phrase.howmuch'), zh: t('language.phrase.howmuch_zh') },
+              { en: t('language.phrase.understand'), zh: t('language.phrase.understand_zh') },
+              { en: t('language.phrase.bill'), zh: t('language.phrase.bill_zh') }
             ].map((phrase, idx) => (
                <div key={idx} className="flex justify-between items-center p-3 bg-gray-50 rounded border-b border-gray-100 last:border-0">
                   <span className="font-medium text-gray-700">{phrase.en}</span>
@@ -70,19 +70,19 @@ export const LanguageCulture: React.FC = () => {
          <ul className="space-y-3 text-sm text-gray-600">
             <li className="flex items-start">
                <i className="ph-check-circle text-green-500 mr-2 mt-0.5"></i>
-               <span><strong>Respect Elders:</strong> Use both hands when giving/receiving items (cards, tea).</span>
+               <span>{t('language.etiquette.respect')}</span>
             </li>
             <li className="flex items-start">
                <i className="ph-check-circle text-green-500 mr-2 mt-0.5"></i>
-               <span><strong>Table Manners:</strong> Tap the table with two fingers to say 'thanks' for tea pouring.</span>
+               <span>{t('language.etiquette.table')}</span>
             </li>
              <li className="flex items-start">
                <i className="ph-x-circle text-red-500 mr-2 mt-0.5"></i>
-               <span><strong>Chopsticks:</strong> Never stick them vertically in rice (resembles funeral incense).</span>
+               <span>{t('language.etiquette.chopsticks')}</span>
             </li>
             <li className="flex items-start">
                <i className="ph-x-circle text-red-500 mr-2 mt-0.5"></i>
-               <span><strong>Face:</strong> Avoid public confrontation or causing someone to lose face (be polite/indirect).</span>
+               <span>{t('language.etiquette.face')}</span>
             </li>
          </ul>
       </section>

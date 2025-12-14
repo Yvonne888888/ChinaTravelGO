@@ -48,7 +48,7 @@ export const VisaEntry: React.FC = () => {
         
         <div className="mb-6">
           <label className="block text-sm font-medium text-gray-700 mb-2">
-            Select Your Passport Country
+            {t('visa.select_country')}
           </label>
           <div className="relative">
             <select
@@ -56,10 +56,10 @@ export const VisaEntry: React.FC = () => {
               value={selectedCountry}
               onChange={handleCountryChange}
             >
-              <option value="">-- Select Country (Sorted by Visa Free Status) --</option>
+              <option value="">{t('visa.select_placeholder')}</option>
               {policies.map((p) => (
                 <option key={p.country_code} value={p.country_code}>
-                  {p.country_name} {p.requirement.includes('Free') ? '✨ (Visa Free)' : ''}
+                  {p.country_name} {p.requirement.includes('Free') ? t('visa.visa_free_label') : ''}
                 </option>
               ))}
             </select>
@@ -75,12 +75,12 @@ export const VisaEntry: React.FC = () => {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-xl font-bold text-gray-900">{result.requirement}</h3>
-                  <p className="mt-1 text-base text-gray-800 font-semibold">Max Duration: {result.duration}</p>
+                  <p className="mt-1 text-base text-gray-800 font-semibold">{t('visa.max_duration')}: {result.duration}</p>
                   <p className="mt-2 text-sm text-gray-600">{result.notes}</p>
                   
                   {result.apply_link && (
                     <a href={result.apply_link} target="_blank" rel="noreferrer" className="mt-3 inline-flex items-center text-sm font-medium text-china-red hover:underline">
-                      Official Application Link <i className="ph-arrow-right ml-1"></i>
+                      {t('visa.apply_link')} <i className="ph-arrow-right ml-1"></i>
                     </a>
                   )}
 
@@ -88,9 +88,9 @@ export const VisaEntry: React.FC = () => {
                     <div className="mt-4 p-3 bg-white border border-yellow-200 rounded text-sm text-yellow-800 shadow-sm">
                       <strong className="block mb-1 flex items-center">
                         <i className="ph-warning-diamond text-lg mr-1 text-yellow-600"></i> 
-                        Passport Validity Warning
+                        {t('visa.passport_warning_title')}
                       </strong>
-                      Airlines may refuse boarding if your passport has less than 6 months validity remaining. It is strongly recommended to travel with a passport valid for at least 6 months to avoid being denied entry.
+                      {t('visa.passport_warning')}
                     </div>
                   )}
                 </div>
@@ -104,17 +104,17 @@ export const VisaEntry: React.FC = () => {
                      <i className="ph-airplane-in-flight text-2xl"></i>
                    </div>
                    <div className="ml-4">
-                     <h3 className="text-lg font-bold text-gray-900">Regional / Transit Policy</h3>
+                     <h3 className="text-lg font-bold text-gray-900">{t('visa.transit_policy')}</h3>
                      <p className="mt-1 text-sm text-gray-600">{result.transit_policy}</p>
                    </div>
                  </div>
                  
                  <div className="ml-0 sm:ml-14 grid sm:grid-cols-2 gap-3">
                     <Link to="/guide/transit-visa-guide" className="flex items-center justify-center px-4 py-2 border border-blue-300 rounded-md bg-white text-sm font-medium text-blue-700 hover:bg-blue-50">
-                       <i className="ph-book-open mr-2"></i> Detailed Policy Guide
+                       <i className="ph-book-open mr-2"></i> {t('visa.detailed_policy')}
                     </Link>
                     <Link to="/guide/transit-visa-qa" className="flex items-center justify-center px-4 py-2 border border-blue-300 rounded-md bg-white text-sm font-medium text-blue-700 hover:bg-blue-50">
-                       <i className="ph-question mr-2"></i> Transit Q&A
+                       <i className="ph-question mr-2"></i> {t('visa.transit_qa')}
                     </Link>
                  </div>
                </div>
@@ -131,7 +131,7 @@ export const VisaEntry: React.FC = () => {
              <h2 className="text-xl font-semibold">{t('visa.customs_title')}</h2>
           </div>
           <Link to="/guide/customs-guide" className="mt-auto w-full flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md bg-gray-50 text-sm font-medium text-gray-700 hover:bg-gray-100">
-             <i className="ph-book-open mr-2"></i> View Customs Guide
+             <i className="ph-book-open mr-2"></i> {t('visa.view_customs')}
           </Link>
         </div>
 
@@ -141,7 +141,7 @@ export const VisaEntry: React.FC = () => {
              <h2 className="text-xl font-semibold">{t('visa.prohibited_title')}</h2>
           </div>
           <Link to="/guide/prohibited-items" className="mt-auto w-full flex items-center justify-center px-4 py-2 border border-red-200 rounded-md bg-red-50 text-sm font-medium text-red-700 hover:bg-red-100">
-             <i className="ph-book-open mr-2"></i> View Prohibited List
+             <i className="ph-book-open mr-2"></i> {t('visa.view_prohibited')}
           </Link>
         </div>
       </section>

@@ -10,7 +10,7 @@ export const HomeMenu: React.FC = () => {
       path: '/visa', 
       icon: 'ph-passport', 
       titleKey: 'nav.visa', 
-      desc: 'Visa Policy, 144h Transit, Customs',
+      descKey: 'home.desc.visa',
       textColor: 'text-red-600',
       borderColor: '#EF4444',
       accentColor: '#DC2626'
@@ -19,7 +19,7 @@ export const HomeMenu: React.FC = () => {
       path: '/money', 
       icon: 'ph-currency-cny', 
       titleKey: 'nav.money', 
-      desc: 'WeChat/Alipay Setup, Currency Exchange',
+      descKey: 'home.desc.money',
       textColor: 'text-amber-600',
       borderColor: '#D97706',
       accentColor: '#B45309'
@@ -28,7 +28,7 @@ export const HomeMenu: React.FC = () => {
       path: '/transport', 
       icon: 'ph-train', 
       titleKey: 'nav.transport', 
-      desc: 'High-Speed Rail, Metro, Maps, SIM',
+      descKey: 'home.desc.transport',
       textColor: 'text-blue-600',
       borderColor: '#2563EB',
       accentColor: '#1D4ED8'
@@ -37,7 +37,7 @@ export const HomeMenu: React.FC = () => {
       path: '/language', 
       icon: 'ph-translate', 
       titleKey: 'nav.language', 
-      desc: 'Translator Apps, Survival Phrases',
+      descKey: 'home.desc.language',
       textColor: 'text-purple-600',
       borderColor: '#A855F7',
       accentColor: '#9333EA'
@@ -46,7 +46,7 @@ export const HomeMenu: React.FC = () => {
       path: '/essentials', 
       icon: 'ph-shield-check', 
       titleKey: 'nav.essentials', 
-      desc: 'Safety, Emergency, Tax Refund',
+      descKey: 'home.desc.essentials',
       textColor: 'text-green-600',
       borderColor: '#16A34A',
       accentColor: '#15803D'
@@ -78,7 +78,7 @@ export const HomeMenu: React.FC = () => {
             </div>
             <div className="flex-1">
               <h2 className="text-xl font-bold text-gray-900">{t(item.titleKey)}</h2>
-              <p className="text-xs text-gray-500 mt-1 font-medium">{item.desc}</p>
+              <p className="text-xs text-gray-500 mt-1 font-medium">{t(item.descKey)}</p>
             </div>
             <i className="ph-caret-right text-gray-300 text-xl group-hover:text-gray-500 transition-colors"></i>
           </Link>
