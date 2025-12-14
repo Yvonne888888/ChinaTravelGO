@@ -1,0 +1,259 @@
+
+[
+  {
+    "country_code": "US",
+    "country_name": "United States",
+    "requirement": "Visa Required",
+    "duration": "Varies",
+    "apply_link": "http://us.china-embassy.gov.cn/eng/lsfw/zj/qz/",
+    "notes": "Tourist (L) visa required. 10-year multi-entry available.",
+    "transit_policy": "Eligible for 72/144-hour Visa-Free Transit in major hubs."
+  },
+  {
+    "country_code": "CA",
+    "country_name": "Canada",
+    "requirement": "Visa Required",
+    "duration": "Varies",
+    "apply_link": "http://ca.china-embassy.gov.cn/eng/lsyw/gzrz/",
+    "notes": "Tourist (L) visa required.",
+    "transit_policy": "Eligible for 72/144-hour Visa-Free Transit."
+  },
+  {
+    "country_code": "FR",
+    "country_name": "France",
+    "requirement": "Visa Free",
+    "duration": "15 Days",
+    "apply_link": "",
+    "notes": "Unilateral visa-free entry for tourism, business, visiting relatives.",
+    "transit_policy": "144-hour transit applies if stay exceeds visa-free limit."
+  },
+  {
+    "country_code": "DE",
+    "country_name": "Germany",
+    "requirement": "Visa Free",
+    "duration": "15 Days",
+    "apply_link": "",
+    "notes": "Unilateral visa-free entry."
+  },
+  {
+    "country_code": "IT",
+    "country_name": "Italy",
+    "requirement": "Visa Free",
+    "duration": "15 Days",
+    "apply_link": "",
+    "notes": "Unilateral visa-free entry."
+  },
+  {
+    "country_code": "ES",
+    "country_name": "Spain",
+    "requirement": "Visa Free",
+    "duration": "15 Days",
+    "apply_link": "",
+    "notes": "Unilateral visa-free entry."
+  },
+  {
+    "country_code": "NL",
+    "country_name": "Netherlands",
+    "requirement": "Visa Free",
+    "duration": "15 Days",
+    "apply_link": "",
+    "notes": "Unilateral visa-free entry."
+  },
+  {
+    "country_code": "CH",
+    "country_name": "Switzerland",
+    "requirement": "Visa Free",
+    "duration": "15 Days",
+    "apply_link": "",
+    "notes": "Unilateral visa-free entry."
+  },
+  {
+    "country_code": "IE",
+    "country_name": "Ireland",
+    "requirement": "Visa Free",
+    "duration": "15 Days",
+    "apply_link": "",
+    "notes": "Unilateral visa-free entry."
+  },
+  {
+    "country_code": "HU",
+    "country_name": "Hungary",
+    "requirement": "Visa Free",
+    "duration": "15 Days",
+    "apply_link": "",
+    "notes": "Unilateral visa-free entry."
+  },
+  {
+    "country_code": "AT",
+    "country_name": "Austria",
+    "requirement": "Visa Free",
+    "duration": "15 Days",
+    "apply_link": "",
+    "notes": "Unilateral visa-free entry."
+  },
+  {
+    "country_code": "BE",
+    "country_name": "Belgium",
+    "requirement": "Visa Free",
+    "duration": "15 Days",
+    "apply_link": "",
+    "notes": "Unilateral visa-free entry."
+  },
+  {
+    "country_code": "LU",
+    "country_name": "Luxembourg",
+    "requirement": "Visa Free",
+    "duration": "15 Days",
+    "apply_link": "",
+    "notes": "Unilateral visa-free entry."
+  },
+  {
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "requirement": "Visa Required",
+    "duration": "Varies",
+    "apply_link": "http://www.chinese-embassy.org.uk/eng/visa/",
+    "notes": "Standard L-visa required.",
+    "transit_policy": "Eligible for 72/144-hour Visa-Free Transit in major hubs."
+  },
+  {
+    "country_code": "RU",
+    "country_name": "Russia",
+    "requirement": "Visa Required (Group Free)",
+    "duration": "Varies",
+    "apply_link": "",
+    "notes": "Visa required for individuals. Visa-free for organized tour groups.",
+    "transit_policy": "Eligible for 72/144-hour Visa-Free Transit."
+  },
+  {
+    "country_code": "JP",
+    "country_name": "Japan",
+    "requirement": "Visa Free (Limited)",
+    "duration": "15 Days",
+    "apply_link": "",
+    "notes": "Visa-free resumed for short visits.",
+    "transit_policy": "Eligible for 72/144-hour Visa-Free Transit."
+  },
+  {
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "requirement": "Visa Free",
+    "duration": "15 Days",
+    "apply_link": "",
+    "notes": "Unilateral visa-free entry (Temporary policy).",
+    "transit_policy": "Eligible for 72/144-hour Visa-Free Transit."
+  },
+  {
+    "country_code": "SG",
+    "country_name": "Singapore",
+    "requirement": "Visa Free",
+    "duration": "30 Days",
+    "apply_link": "",
+    "notes": "Reciprocal visa-free entry."
+  },
+  {
+    "country_code": "MY",
+    "country_name": "Malaysia",
+    "requirement": "Visa Free",
+    "duration": "15 Days",
+    "apply_link": "",
+    "notes": "Reciprocal visa-free entry."
+  },
+  {
+    "country_code": "TH",
+    "country_name": "Thailand",
+    "requirement": "Visa Free",
+    "duration": "Permanent",
+    "apply_link": "",
+    "notes": "Permanent mutual visa-exemption."
+  },
+  {
+    "country_code": "ID",
+    "country_name": "Indonesia",
+    "requirement": "Visa Required",
+    "duration": "Varies",
+    "apply_link": "",
+    "notes": "Standard visa required.",
+    "transit_policy": "Eligible for 24-hour direct transit."
+  },
+  {
+    "country_code": "PK",
+    "country_name": "Pakistan",
+    "requirement": "Visa Required",
+    "duration": "Varies",
+    "apply_link": "",
+    "notes": "Visa required.",
+    "transit_policy": "Check specific transit conditions."
+  },
+  {
+    "country_code": "NP",
+    "country_name": "Nepal",
+    "requirement": "Visa Required",
+    "duration": "Varies",
+    "apply_link": "",
+    "notes": "Visa required.",
+    "transit_policy": "Check specific transit conditions."
+  },
+  {
+    "country_code": "AE",
+    "country_name": "UAE",
+    "requirement": "Visa Free",
+    "duration": "30 Days",
+    "apply_link": "",
+    "notes": "Mutual visa exemption."
+  },
+  {
+    "country_code": "SA",
+    "country_name": "Saudi Arabia",
+    "requirement": "Visa Required",
+    "duration": "Varies",
+    "apply_link": "",
+    "notes": "Visa required.",
+    "transit_policy": "Eligible for 24-hour direct transit."
+  },
+  {
+    "country_code": "BR",
+    "country_name": "Brazil",
+    "requirement": "Visa Required",
+    "duration": "Varies",
+    "apply_link": "",
+    "notes": "10-year visa available.",
+    "transit_policy": "Eligible for 72/144-hour Visa-Free Transit."
+  },
+  {
+    "country_code": "AR",
+    "country_name": "Argentina",
+    "requirement": "Visa Required",
+    "duration": "Varies",
+    "apply_link": "",
+    "notes": "10-year visa available.",
+    "transit_policy": "Eligible for 72/144-hour Visa-Free Transit."
+  },
+  {
+    "country_code": "MX",
+    "country_name": "Mexico",
+    "requirement": "Visa Required",
+    "duration": "Varies",
+    "apply_link": "",
+    "notes": "Visa required.",
+    "transit_policy": "Eligible for 72/144-hour Visa-Free Transit."
+  },
+  {
+    "country_code": "AU",
+    "country_name": "Australia",
+    "requirement": "Visa Free",
+    "duration": "15 Days",
+    "apply_link": "http://au.china-embassy.gov.cn/eng/lsfw/Visa/",
+    "notes": "Unilateral visa-free entry.",
+    "transit_policy": "Eligible for 72/144-hour Visa-Free Transit."
+  },
+  {
+    "country_code": "NZ",
+    "country_name": "New Zealand",
+    "requirement": "Visa Free",
+    "duration": "15 Days",
+    "apply_link": "",
+    "notes": "Unilateral visa-free entry.",
+    "transit_policy": "Eligible for 72/144-hour Visa-Free Transit."
+  }
+]
