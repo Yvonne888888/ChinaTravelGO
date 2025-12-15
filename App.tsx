@@ -23,7 +23,7 @@ const FooterContent = () => {
                 <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">{t('footer.questions')}</h3>
                 <p className="mt-2 text-base text-gray-500">
                     {t('footer.contact')} <br />
-                    <a href="mailto:help@chinatravelertoolkit.com" className="text-china-red hover:underline font-medium">help@chinatravelertoolkit.com</a>
+                    <a href="mailto:chinatravelgo@139.com" className="text-china-red hover:underline font-medium">help@chinatravelertoolkit.com</a>
                 </p>
             </div>
             <p className="text-center text-xs text-gray-400 border-t border-gray-100 pt-6">
